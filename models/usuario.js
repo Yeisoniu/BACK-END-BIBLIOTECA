@@ -1,5 +1,5 @@
 const {Schema,model}=require('mongoose')
-const UsuarioSchema=new Schema({    
+const UsuarioSchema=Schema({    
     codigo:{
         type:String,
         required:true,
@@ -22,7 +22,8 @@ const UsuarioSchema=new Schema({
 
     },
     enabled:{
-            type:Boolean
+            type:Boolean,
+            default:true
 
     },
     //datos de auditoria
@@ -36,4 +37,4 @@ const UsuarioSchema=new Schema({
     },
 
 });
-model.exports = model('Usuario',UsuarioSchema);
+module.exports = model('Usuario',UsuarioSchema);

@@ -33,4 +33,4 @@ const AutorSchema=new Schema({
     },
 
 });
-model.exports = model('Autor',AutorSchema);
+module.exports = model('Autor',AutorSchema);

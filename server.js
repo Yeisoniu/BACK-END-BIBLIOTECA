@@ -1,15 +1,7 @@
-const dotenv =require('dotenv')//importando dotenv
-dotenv.config()
-const express =require('express')
-const app =express()
+const app =  require('./app')
 
-//todo:migrar a app.js
-const { mongoConnect } = require('./databases/config')
-mongoConnect()
-app.set('port',process.env.PORT || 3002)
-// console.log('Sistema de Biblioteca IU Digital')
-// console.log(process.env.PORT)
+app.set('port', process.env.PORT || 3002)
 
-app.listen(app.get('port'),()=>{
-    console.log('arranco la app por el puerto '+ app.get('port'))
+app.listen(app.get('port'), () => {
+    console.log('Arrancó la app por el puerto ' + app.get('port'))
 })

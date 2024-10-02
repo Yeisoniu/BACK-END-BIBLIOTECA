@@ -45,4 +45,4 @@ const PrestamosSchema=new Schema({
         type:Boolean,
     }, 
     });
-model.exports = model('Prestamos',PrestamosSchema);
+module.exports = model('Prestamos',PrestamosSchema);

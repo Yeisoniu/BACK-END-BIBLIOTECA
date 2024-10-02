@@ -22,4 +22,4 @@ const LocalizacionesSchema=new Schema({
 
 })
 LocalizacionesSchema.index({seccion:1, Estanteria: 1},{inique:true})
-model.exports = model('Localizaciones',LocalizacionesSchema);
+module.exports = model('Localizaciones',LocalizacionesSchema);

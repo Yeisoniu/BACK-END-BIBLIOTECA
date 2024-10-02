@@ -14,6 +14,10 @@ const GestorSchema=new Schema({
     password :{   
         type:String,
     },
+    enabled :{
+        type: Boolean,
+        default:true
+    },
     //datos de auditoria
     FechaCreacion :{
         type:Date,
@@ -25,4 +29,4 @@ const GestorSchema=new Schema({
     },
 
 });
-model.exports = model('Gestor',GestorSchema);
+module.exports = model('Gestor',GestorSchema);

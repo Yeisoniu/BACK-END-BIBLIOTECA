@@ -27,4 +27,4 @@ const EjemplarSchema=new Schema({
     },
 
 });
-model.exports = model('Ejemplar',EjemplarSchema);
+module.exports = model('Ejemplar',EjemplarSchema);

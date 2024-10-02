@@ -11,7 +11,7 @@ const libroSchema=new Schema({
         required:[true,'titulo debe tener un nombre']
 
     },
-    ISBA :{   
+    ISBN :{   
         type:String,
         required:true,
         unique:[true,'ISBN libro ya existe']
@@ -41,4 +41,4 @@ const libroSchema=new Schema({
     },
 
 });
-model.exports = model('libro',libroSchema);
+module.exports = model('libro',libroSchema);

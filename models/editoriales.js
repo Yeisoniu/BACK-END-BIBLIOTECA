@@ -23,4 +23,4 @@ const EditorialSchema=new Schema({
     },
 
 });
-model.exports = model('Editorial',EditorialSchema);
+module.exports = model('Editorial',EditorialSchema);
