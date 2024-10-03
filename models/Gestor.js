@@ -1,5 +1,5 @@
 const {Schema,model}=require('mongoose')
-const GestorSchema=new Schema({    
+const GestorSchema= Schema({    
     documento:{
         type:String,
         required:true,

@@ -24,9 +24,12 @@ app.use(express.urlencoded({extended:false }))
 //rutas
 const usuarios =require('./routes/usuario')
 const gestores =require('./routes/gestor')
+const Prestamos =require('./routes/prestamos')
 
 app.use('/api/v1/usuarios' , usuarios)
 app.use('/api/v1/gestores' , gestores)
+app.use('/api/v1/prestamos' ,  Prestamos)
+
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: false}))

@@ -1,12 +1,12 @@
 const {Schema,model}=require('mongoose')
-const PrestamosSchema=new Schema({    
+const PrestamosSchema= Schema({    
     ejemplares:{
-        type:Schema.Types.ObjectId,
+        type: Schema.Types.ObjectId,
         ref:'Ejemplar',
         required:true
     },
     Usuarios:{
-            type:Schema.type.objectid,
+            type: Schema.Types.ObjectId,
             ref:'Usuario',
             required:true
         }
@@ -31,7 +31,7 @@ const PrestamosSchema=new Schema({
 
     },
     Gestor:{  
-            type:Schema.type.objectid,
+            type:Schema.Types.ObjectId,
             ref:'Gestor',
             required:true
     },

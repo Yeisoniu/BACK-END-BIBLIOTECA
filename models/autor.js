@@ -1,5 +1,5 @@
 const {Schema,model}=require('mongoose')
-const AutorSchema=new Schema({    
+const AutorSchema=Schema({    
     codigo:{
         type:Number,
         required:true,

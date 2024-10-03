@@ -1,5 +1,5 @@
 const {Schema,model}=require('mongoose')
-const EditorialSchema=new Schema({    
+const EditorialSchema=Schema({    
     codigo:{
         type:String,
         required:true,

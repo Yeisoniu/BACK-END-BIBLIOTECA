@@ -1,5 +1,5 @@
-const {Schema,model}=require('mongoose')
-const EjemplarSchema=new Schema({    
+const {Schema, model}=require('mongoose')
+const EjemplarSchema= Schema({    
     codigo:{
         type:String,
         required:true,

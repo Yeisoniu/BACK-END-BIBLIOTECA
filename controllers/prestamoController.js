@@ -1,19 +1,20 @@
 const { request, response } = require('express')
-const Prestamo = require('../models/prestamo')
+const Prestamo = require('../models/Prestamo')
 const Usuario =require('../models/usuario')
-const Ejemplar=require('..models/ejemplar')
+const Ejemplar=require('../models/ejemplar')
+const Gestor=require('../models/Gestor')
 const prestarEjemplar = 
     async (req = request, res = response) => {
     try {
-        const{ejemplares,Usuarios}=req.body
-        data ={
-            ejemplares,
-            Usuarios,
-            gestor:
+        const{Ejemplar,Usuario,Gestor} = req.body
+        const data = {
+            Ejemplar,
+            Usuario,
+            Gestor
         }
-        const prestamo =new Prestamo(data)
+        const prestamo =new Prestamos(data)
         await Prestamos.save()
-        return res.status(201).json(prestamo)
+        return res.status(201).json(Prestamos)
     }
     catch {
         console.log(e).status(500).json({e})
@@ -47,5 +48,9 @@ const consultaPrestamoPorUsuario =
 
 module.exports = {
     prestarEjemplar,
-    devolverEjemplar
+    devolverEjemplar,
+    cobrarMulta,
+    notificarMulta,
+    consultaPrestamos,
+    consultaPrestamoPorUsuario 
 }

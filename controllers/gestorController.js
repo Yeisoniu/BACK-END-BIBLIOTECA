@@ -1,5 +1,5 @@
 const { request, response } = require('express')
-const Gestor = require('../models/gestor')
+const Gestor = require('../models/Gestor')
 const bcryptjs =require ('bcryptjs')
 const { generarToken } = require('../utils/generar-token')
 const crearGestor =async(req = request, res = response) => {
