@@ -1,0 +1,144 @@
+[{
+  "_id": {
+    "$oid": "66fde50e9b9f0b5107e486ef"
+  },
+  "codigo": "0000-2",
+  "localizacion": {
+    "_id": "66ecd2fa5d7938d051314e30"
+  },
+  "libro": {
+    "_id": "66f2106e7ead4d31842028bb"
+  },
+  "fechaCreacion": {
+    "$date": "2024-10-03T00:27:58.138Z"
+  },
+  "fechaActualizacion": null
+},
+{
+  "_id": {
+    "$oid": "66fde50e9b9f0b5107e486f3"
+  },
+  "codigo": "1000-2",
+  "localizacion": {
+    "_id": "66ecd2fa5d7938d051314e31"
+  },
+  "libro": {
+    "_id": "66f2106e7ead4d31842028bc"
+  },
+  "fechaCreacion": {
+    "$date": "2024-10-03T00:27:58.138Z"
+  },
+  "fechaActualizacion": null
+},
+{
+  "_id": {
+    "$oid": "66fde50e9b9f0b5107e486f5"
+  },
+  "codigo": "2000-2",
+  "localizacion": {
+    "_id": "66ecd2fa5d7938d051314e31"
+  },
+  "libro": {
+    "_id": "66f2106e7ead4d31842028bd"
+  },
+  "fechaCreacion": {
+    "$date": "2024-10-03T00:27:58.138Z"
+  },
+  "fechaActualizacion": null
+},
+{
+  "_id": {
+    "$oid": "66fde50e9b9f0b5107e486f4"
+  },
+  "codigo": "2000-1",
+  "localizacion": {
+    "_id": "66ecd2fa5d7938d051314e31"
+  },
+  "libro": {
+    "_id": "66f2106e7ead4d31842028bd"
+  },
+  "fechaCreacion": {
+    "$date": "2024-10-03T00:27:58.138Z"
+  },
+  "fechaActualizacion": null
+},
+{
+  "_id": {
+    "$oid": "66fde50e9b9f0b5107e486f6"
+  },
+  "codigo": "2000-3",
+  "localizacion": {
+    "_id": "66ecd2fa5d7938d051314e31"
+  },
+  "libro": {
+    "_id": "66f2106e7ead4d31842028bd"
+  },
+  "fechaCreacion": {
+    "$date": "2024-10-03T00:27:58.138Z"
+  },
+  "fechaActualizacion": null
+},
+{
+  "_id": {
+    "$oid": "66fde50e9b9f0b5107e486f1"
+  },
+  "codigo": "1000-0",
+  "localizacion": {
+    "_id": "66ecd2fa5d7938d051314e31"
+  },
+  "libro": {
+    "_id": "66f2106e7ead4d31842028bc"
+  },
+  "fechaCreacion": {
+    "$date": "2024-10-03T00:27:58.138Z"
+  },
+  "fechaActualizacion": null
+},
+{
+  "_id": {
+    "$oid": "66fde50e9b9f0b5107e486ee"
+  },
+  "codigo": "0000-1",
+  "localizacion": {
+    "_id": "66ecd2fa5d7938d051314e30"
+  },
+  "libro": {
+    "_id": "66f2106e7ead4d31842028bb"
+  },
+  "fechaCreacion": {
+    "$date": "2024-10-03T00:27:58.138Z"
+  },
+  "fechaActualizacion": null
+},
+{
+  "_id": {
+    "$oid": "66fde50e9b9f0b5107e486f0"
+  },
+  "codigo": "0000-3",
+  "localizacion": {
+    "_id": "66ecd2fa5d7938d051314e30"
+  },
+  "libro": {
+    "_id": "66f2106e7ead4d31842028bb"
+  },
+  "fechaCreacion": {
+    "$date": "2024-10-03T00:27:58.138Z"
+  },
+  "fechaActualizacion": null
+},
+{
+  "_id": {
+    "$oid": "66fde50e9b9f0b5107e486f2"
+  },
+  "codigo": "1000-1",
+  "localizacion": {
+    "_id": "66ecd2fa5d7938d051314e31"
+  },
+  "libro": {
+    "_id": "66f2106e7ead4d31842028bc"
+  },
+  "fechaCreacion": {
+    "$date": "2024-10-03T00:27:58.138Z"
+  },
+  "fechaActualizacion": null
+}]

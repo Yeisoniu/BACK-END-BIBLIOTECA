@@ -1,0 +1,27 @@
+{
+  "type": "Compass Connections",
+  "version": {
+    "$numberInt": "1"
+  },
+  "connections": [
+    {
+      "id": "6eef13f3-6f2c-473c-a6c3-bc3c2b9bd9c6",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1728049571349"
+        }
+      },
+      "favorite": {
+        "name": "biblioteca.mfprh.mongodb.net",
+        "color": "color8"
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb+srv://Admin:MaximilianomeridioX@biblioteca.mfprh.mongodb.net/",
+        "oidc": {
+          "serializedState": "eyJvaWRjUGx1Z2luU3RhdGVWZXJzaW9uIjowLCJzdGF0ZSI6W119"
+        }
+      }
+    }
+  ]
+}

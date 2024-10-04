@@ -1,0 +1,423 @@
+{
+	"info": {
+		"_postman_id": "062e6c28-2e1e-42d4-be75-f43c2f71ed78",
+		"name": "Biblioteca UID",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38630649"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Crearusuario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI0MTU2NDIzMTIzIiwiaWF0IjoxNzI3ODk5NjYyLCJleHAiOjE3Mjc5ODYwNjJ9.5Xf86MKB-AYIEOQJHgeIaQ2JA3sbwawCmYdDzVhFsII",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\" : \"45221\",\r\n    \"nombre\" : \"prueba usuario \",\r\n    \"telefono\" : \"4563432\",\r\n    \"direccion\" : \"desconocida\",\r\n    \"descripcion\":\"directivo iu digital\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/v1/usuarios/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtenertodos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI0MTU2NDIzMTIzIiwiaWF0IjoxNzI3ODk5NjYyLCJleHAiOjE3Mjc5ODYwNjJ9.5Xf86MKB-AYIEOQJHgeIaQ2JA3sbwawCmYdDzVhFsII",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3002/api/v1/usuarios/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtenerPorID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI0MTU2NDIzMTIzIiwiaWF0IjoxNzI3ODk5NjYyLCJleHAiOjE3Mjc5ODYwNjJ9.5Xf86MKB-AYIEOQJHgeIaQ2JA3sbwawCmYdDzVhFsII",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3002/api/v1/usuarios/66fc68f41e5f623b15a24d20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"66fc68f41e5f623b15a24d20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizausuariobyID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI0MTU2NDIzMTIzIiwiaWF0IjoxNzI3ODk5NjYyLCJleHAiOjE3Mjc5ODYwNjJ9.5Xf86MKB-AYIEOQJHgeIaQ2JA3sbwawCmYdDzVhFsII",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"direccion\" : \"call 415 1ad\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/v1/usuarios/66fc6f1d5622fb94f599b5ff",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"66fc6f1d5622fb94f599b5ff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deshabilitarid",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI0MTU2NDIzMTIzIiwiaWF0IjoxNzI3ODk5NjYyLCJleHAiOjE3Mjc5ODYwNjJ9.5Xf86MKB-AYIEOQJHgeIaQ2JA3sbwawCmYdDzVhFsII",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/v1/usuarios/66fc68f41e5f623b15a24d20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"v1",
+								"usuarios",
+								"66fc68f41e5f623b15a24d20"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Gestores",
+			"item": [
+				{
+					"name": "Agregargestor",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMjQxNTMxIiwiaWF0IjoxNzI3ODkzMDEzLCJleHAiOjE3Mjc5Nzk0MTN9.jHBGqnwKNz5esbZpCEmPQpDuX9yDvhwypNgDrHpsdJw",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "secret",
+								"value": "MaximilianomeridioX",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"documento\" : \"2145123\",\r\n    \"nombre\" : \"luigi y mario \",\r\n    \"password\" : \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/v1/gestores/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"v1",
+								"gestores",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"documento\":\"4156423123\",\r\n\"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/v1/gestores/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"v1",
+								"gestores",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Prestamos",
+			"item": [
+				{
+					"name": "solicitudPrestamos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMDc3MTQ5NTE4IiwiaWF0IjoxNzI4MDQ5NjQzLCJleHAiOjE3MjgxMzYwNDN9.xAg_PqFfPOXETCwCXAChkg9mm7etzxVwcZa5RPPZM3Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ejemplar\": {\r\n    \"_id\": \"66fde50e9b9f0b5107e486ef\"\r\n    },\r\n    \"usuario\" : {\r\n    \"_id\": \"66fc67571e5f623b15a24d19\"\r\n    } \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/v1/prestamos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"v1",
+								"prestamos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultarprestamos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMDc3MTQ5NTE4IiwiaWF0IjoxNzI4MDQ5NjQzLCJleHAiOjE3MjgxMzYwNDN9.xAg_PqFfPOXETCwCXAChkg9mm7etzxVwcZa5RPPZM3Q",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3002/api/v1/prestamos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"v1",
+								"prestamos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultaprestamobyusuario",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMDc3MTQ5NTE4IiwiaWF0IjoxNzI4MDQ5NjQzLCJleHAiOjE3MjgxMzYwNDN9.xAg_PqFfPOXETCwCXAChkg9mm7etzxVwcZa5RPPZM3Q",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3002/api/v1/prestamos/66fc67571e5f623b15a24d19/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"v1",
+								"prestamos",
+								"66fc67571e5f623b15a24d19",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "devolverEjemplar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMDc3MTQ5NTE4IiwiaWF0IjoxNzI4MDQ5NjQzLCJleHAiOjE3MjgxMzYwNDN9.xAg_PqFfPOXETCwCXAChkg9mm7etzxVwcZa5RPPZM3Q",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3002/api/v1/prestamos/66ff3eba93278c0171bc2913",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"v1",
+								"prestamos",
+								"66ff3eba93278c0171bc2913"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cobrarMulta",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMDc3MTQ5NTE4IiwiaWF0IjoxNzI4MDQ5NjQzLCJleHAiOjE3MjgxMzYwNDN9.xAg_PqFfPOXETCwCXAChkg9mm7etzxVwcZa5RPPZM3Q",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3002/api/v1/prestamos/66ff3eba93278c0171bc2913/cobrar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"v1",
+								"prestamos",
+								"66ff3eba93278c0171bc2913",
+								"cobrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consulta&usuario&estado",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
