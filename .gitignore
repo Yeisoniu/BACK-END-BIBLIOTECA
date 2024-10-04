@@ -1,7 +1,8 @@
 .env
-
+create-collections
 /nope_modules
 nope_modules/
 nope_modules
 
 package-lock.json
+node_modules

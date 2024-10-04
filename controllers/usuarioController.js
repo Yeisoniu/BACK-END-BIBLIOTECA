@@ -7,6 +7,7 @@ const crearUsuario = async (req = request, res = response) => {
         const body = req.body
         const usuario = new Usuario(body)
         await usuario.save()
+        console.log('usuario creado')
         return res.status(201).json(usuario)
     } 
     catch(e) {

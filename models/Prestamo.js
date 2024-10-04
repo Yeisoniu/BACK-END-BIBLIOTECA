@@ -1,48 +1,48 @@
+const dayjs = require('dayjs')
 const {Schema,model}=require('mongoose')
 const PrestamosSchema= Schema({    
-    ejemplares:{
+    ejemplar:{
         type: Schema.Types.ObjectId,
         ref:'Ejemplar',
         required:true
     },
-    Usuarios:{
+    usuario:{
             type: Schema.Types.ObjectId,
             ref:'Usuario',
             required:true
         }
     ,
     //datos de fecha prestamo
-    FechaADevolver:{
+    fechaADevolver:{
         type:Date,
-        default:new Date()
+        default:dayjs().add(15,'days')
        //automatico 15 dias + 
 
     },
 
 
-    FechaPrestamos :{
+    fechaPrestamo :{
         type:Date,
-        
-        required:true,
-        default:(new Date()).getDate()+15
+        default:new Date()
     },
-    FechaDevolucion :{
-        type:Date,
+    fechaDevolucion :{
+        type:Date
 
     },
-    Gestor:{  
+    gestor:{  
             type:Schema.Types.ObjectId,
             ref:'Gestor',
             required:true
     },
-    Multa:{
+    multa:{
         type:Number,
         default: 0
        //automatico   despues de haber passado el tiempo
      
     },
-    MultaPagada:{
+    multaPagada:{
         type:Boolean,
+        default:true
     }, 
     });
 module.exports = model('Prestamos',PrestamosSchema);
